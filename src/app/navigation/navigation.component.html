@@ -1,0 +1,56 @@
+<img src="/assets/map-banner-left.png" class="img-fluid" alt="MAP Banner">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="badge badge-primary navbar-brand" href="#">Tracking America's unsolved homicides</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="isCollapsedAbout = !isCollapsedAbout">
+          About Us
+        </a>
+        <div [ngbCollapse]="isCollapsedAbout" class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Who We Are</a>
+          <a class="dropdown-item" href="#">Why We Exist</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Support Us</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">How To Use</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Clearance Rate</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Search Cases</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="isCollapsedMurder = !isCollapsedMurder">
+          Murder Clusters
+        </a>
+        <div [ngbCollapse]="isCollapsedMurder" class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">What Are These?</a>
+          <a class="dropdown-item" href="#">County Clusters</a>
+          <a class="dropdown-item" href="#">Metro Clusters</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Clearance Rate</a>
+      </li>
+    </ul>
+    <form action="https://www.paypal.com/cgi-bin/webscr" class="donate" method="post" target="_top">
+      <div style="text-align: left;">
+        <input name="cmd" type="hidden" value="_s-xclick">
+        <input name="hosted_button_id" type="hidden" value="2FVJ4LZE4D3Q6">
+        <input alt="PayPal - The safer, easier way to pay online!" border="0" name="submit" src="https://www.paypalobjects.com/webstatic/en_US/i/btn/png/btn_donate_92x26.png" type="image">
+        <img alt="" border="0" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1">
+      </div>
+    </form>
+  </div>
+</nav>

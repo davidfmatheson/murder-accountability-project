@@ -1,0 +1,13 @@
+.blog-posts {
+    margin-top: 10px;
+    width: 75%;
+}
+
+.card-text {
+    float: left;
+    width: 65%;
+}
+
+.card-video {
+    float: right;
+}
